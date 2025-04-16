@@ -3,42 +3,45 @@ import ResponsiveWrapper from "@/components/Wrapper";
 
 export default function HackathonSection() {
     return (
-        <section className="relative mt-[10rem]">
-            {/* Relative wrapper for video and content */}
-            <div className="relative inline-block w-full">
-                {/* Video */}
-                <video
-                    className="w-full h-auto"
-                    src="/hackathon.mp4"
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-                />
+        <section className="mt-[5rem] md:mt-[10rem] relative z-10"> 
+            <div className="w-full">
+             
+                <div className="relative w-full aspect-video min-h-[400px]">
+                    <video
+                        className="absolute inset-0 w-full h-full object-cover"
+                        src="/hackathon.mp4"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                    />
 
-                {/* Overlay */}
-                <div className="absolute inset-0 gradient-overlay-double"></div>
+                 
+                    <div className="absolute inset-0 gradient-overlay-double"></div>
 
-                {/* Content centered in video */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                    <ResponsiveWrapper className="text-center flex flex-col items-center px-[20rem] space-y-8 text-white">
-                        {/* <h4 className="text-gray-200">MAIN EVENT</h4> */}
-                        <h1 className="text-6xl font-bold">Hackathon</h1>
-                        <p className="text-lg">
-                            The hackathon has this and that aand this and that. Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit. Repellat, molestias. Lorem ipsum dolor sit amet. Prize:
-                        </p>
-                         <ul className="text-left">
-                            <li>✅ Winner: Rs10000</li>
-                            <li>✅ Second: Rs10000</li>
-                            <li>✅ THird: Rs10000</li>
-                        </ul>
-                        <div className="flex space-x-4">
-                            <Button size={"lg"}>Join Hackathon</Button>
-                            <Button size={"lg"} variant={"outline"}>Contact Us</Button>
-                        </div>
-                       
-                    </ResponsiveWrapper>
+                  
+                    <div className="relative z-10 h-full flex items-center justify-center">
+                        <ResponsiveWrapper className="text-center flex flex-col items-center px-4 sm:px-8 lg:px-20 py-12 space-y-6 md:space-y-8 text-white">
+                            <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">Hackathon</h1>
+                            <p className="text-base md:text-lg max-w-3xl">
+                            Join our thrilling hackathon—unleash creativity, win epic prizes, and code the future!
+                            </p>
+                            <ul className="text-left text-base md:text-lg space-y-2">
+                                <li className="flex items-center">🗸 Collaboration</li>
+                                <li className="flex items-center">🗸 Skill-building</li>
+                                <li className="flex items-center">🗸 Rewards & Prizes</li>
+                            </ul>
+                            <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto justify-center"><a href="/Form.html" className="w-full sm:w-auto">
+  <Button size="lg">Join Hackathon</Button>
+</a>
+
+<a href="https://codelitsstudio.com/contact" className="w-full sm:w-auto">
+  <Button size="lg" variant="outline">Contact Us</Button>
+</a>
+
+                            </div>
+                        </ResponsiveWrapper>
+                    </div>
                 </div>
             </div>
         </section>

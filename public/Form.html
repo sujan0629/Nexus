@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta http-equiv="ScreenOrientation" content="autoRotate:disabled" />
+  <meta name="keywords" content="web, website, user experience, ux, designer, graphics, product, user interface, ui, developer, css, html, jQuery, mobile, developer, business" />
+
+
+  <title>Codelits Nexus | Esports & Innovation Championship 2025</title>
+  <link rel="icon" type="image/x-icon" href="fav.ico" />
+ 
+
+  <style>
+    .logo {
+
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 10001;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 120px;
+  width: auto;
+}
+
+    .wrapper {
+      z-index: 10000;
+      position: relative;
+    }
+
+    .div1,
+    .div2 {
+      width: 102%;
+      height: 80px;
+      position: absolute;
+      overflow-x: hidden;
+      display: flex;
+      margin-top: 100px;
+      flex-direction: row;
+      background-color: #ffc350;
+      filter: drop-shadow(0 0 20px rgba(0, 0, 0, .15));
+    }
+
+    .div1 {
+      top: 200px;
+      transform: rotate(-2deg);
+    }
+
+    .div2 {
+      top: 300px;
+      transform: rotate(2deg);
+    }
+
+    .__line {
+      width: 100vw;
+      left: 0;
+      display: flex;
+      align-items: center;
+    }
+
+    .yellow_line__text {
+      height: inherit;
+      display: inline-block;
+      font-size: 28px;
+      line-height: 80px;
+      font-family: Stapel;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+      color: #0c131d;
+      will-change: auto;
+      white-space: pre;
+    }
+
+    .yellow_line__text--1 {
+      animation: ticker_1 70s linear infinite;
+      animation-delay: -70s;
+    }
+
+    .yellow_line__text--2 {
+      animation: ticker_2 70s linear infinite;
+      animation-delay: -35s;
+    }
+
+    .yellow_line__text--3 {
+      animation: ticker_3 70s linear infinite;
+      animation-delay: -70s;
+    }
+
+    .yellow_line__text--4 {
+      animation: ticker_4 70s linear infinite;
+      animation-delay: -35s;
+    }
+
+    @keyframes ticker_1 {
+      0% {
+        transform: translateX(100%);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    @keyframes ticker_2 {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(-200%);
+      }
+    }
+
+    @keyframes ticker_3 {
+      0% {
+        transform: translateX(-100%);
+      }
+
+      100% {
+        transform: translateX(100%);
+      }
+    }
+
+    @keyframes ticker_4 {
+      0% {
+        transform: translateX(-200%);
+      }
+
+      100% {
+        transform: translateX(0%);
+      }
+    }
+  </style>
+</head>
+
+<body>
+ 
+<a href="/" class="logo">
+  <img src="logo.png" alt="Codelits Logo" />
+</a>
+
+  <div class='wrapper'>
+    <!-- Top -->
+    <div class='div1 __line'>
+      <p class='yellow_line__text yellow_line__text--1'>• Registration form will be available soon • Registration form will be available soon • Registration form will be available soon •</p>
+      <p class='yellow_line__text yellow_line__text--2'>• Registration form will be available soon • Registration form will be available soon • Registration form will be available soon •</p>
+    </div>
+
+    <!-- Bottom-->
+    <div class='div2 __line'>
+      <p class='yellow_line__text yellow_line__text--3'>• Registration form will be available soon • Registration form will be available soon • Registration form will be available soon •</p>
+      <p class='yellow_line__text yellow_line__text--4'>• Registration form will be available soon • Registration form will be available soon • Registration form will be available soon •</p>
+    </div>
+  </div>
+</body>
+
+</html>
