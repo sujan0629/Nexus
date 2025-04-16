@@ -71,7 +71,7 @@ export function PrizePoolSection() {
               TECH CHAMPIONSHIP PRIZES
             </h4>
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-              Total Prize Pool of ₹6,00,000
+              Total Prize Pool of NPR 6,00,000
             </h1>
             <p className="text-gray-600 text-lg max-w-3xl mx-auto">
               Compete in Asia&apos;s premier tech championship with rewards across 8 categories.
